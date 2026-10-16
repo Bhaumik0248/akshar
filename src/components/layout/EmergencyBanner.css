@@ -1,0 +1,103 @@
+.top-banner {
+  background: #0b1a2d; /* Authoritative Hospital Deep Navy */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  padding: 0.55rem 0;
+  position: relative;
+  z-index: 1001;
+}
+
+.top-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.banner-left, .banner-right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.banner-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.banner-divider {
+  color: #475569;
+}
+
+.text-teal { color: #2dd4bf; }
+.text-cyan { color: #38bdf8; }
+.text-emerald { color: #34d399; }
+
+/* Doctor Portal Button in Top Utility Bar */
+.banner-doctor-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #e2e8f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.banner-doctor-btn:hover {
+  background: rgba(14, 165, 233, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.banner-badge {
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.05rem 0.38rem;
+  border-radius: var(--radius-full);
+}
+
+.hotline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #ffffff;
+  background: #dc2626; /* Hospital Emergency Red */
+  border: 1px solid #b91c1c;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.78rem;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35);
+}
+
+.hotline-link:hover {
+  background: #ef4444;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.5);
+  transform: translateY(-1px);
+}
+
+.phone-pulse {
+  animation: float 2s infinite ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .banner-left {
+    display: none;
+  }
+  .top-banner-container {
+    justify-content: center;
+  }
+}

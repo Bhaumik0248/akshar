@@ -1,0 +1,293 @@
+.booking-section {
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-subtle);
+  background: #f8fafc;
+}
+
+.booking-card-wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3.5rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.booking-info-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.guarantees-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.guarantee-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.g-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guarantee-item strong {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.guarantee-item p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Doctor Portal Promo Box */
+.doctor-portal-promo-box {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0369a1;
+  letter-spacing: 0.04em;
+}
+
+.promo-text {
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.promo-btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  background: #ffffff;
+  border-color: #7dd3fc;
+  color: #0369a1;
+}
+
+.promo-btn:hover {
+  background: #e0f2fe;
+}
+
+/* Form Styles */
+.physio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.file-upload-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-hint {
+  font-size: 0.74rem;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.file-drop-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border: 1px dashed #0284c7;
+  border-radius: var(--radius-sm);
+  color: #0284c7;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.file-drop-btn:hover {
+  background: #e0f2fe;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 0.95rem;
+  color: #0f172a;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.field-group select {
+  cursor: pointer;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.field-group textarea {
+  resize: vertical;
+}
+
+.btn-submit-full {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+/* Confirmation Screen */
+.confirmation-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+  gap: 1.1rem;
+}
+
+.confirm-icon-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(5, 150, 105, 0.2);
+}
+
+.confirm-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.confirm-text {
+  color: #334155;
+  font-size: 1rem;
+  max-width: 460px;
+}
+
+.booking-ref-badge {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  padding: 0.45rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+}
+
+.confirm-details-box {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  text-align: left;
+}
+
+.confirm-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: #475569;
+}
+
+.confirm-row strong {
+  color: #0f172a;
+}
+
+.confirm-actions-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 980px) {
+  .booking-card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2.5rem;
+  }
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}

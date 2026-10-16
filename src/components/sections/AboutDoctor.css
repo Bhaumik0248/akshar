@@ -1,0 +1,222 @@
+.about-doctor-section {
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-subtle);
+  background: #ffffff;
+}
+
+.doctors-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.doctor-card-panel {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-lg);
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  position: relative;
+}
+
+.doctor-card-panel:hover {
+  transform: translateY(-4px);
+  border-color: #0284c7;
+  box-shadow: 0 14px 35px rgba(2, 132, 199, 0.12);
+}
+
+.doctor-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.doctor-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.doctor-headshot-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0284c7;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
+  display: block;
+}
+
+.verified-shield-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: #ffffff;
+  color: #059669;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #059669;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-header-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.doctor-tag-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.doc-exp-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.doc-miap-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #059669;
+  background: #ecfdf5;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.doctor-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.doctor-card-degrees {
+  font-size: 0.86rem;
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.doctor-card-role {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.doctor-card-bio {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+
+.doctor-specialties-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.specialties-title {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.specialties-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.spec-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.doctor-accreditation-line {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+.doctor-card-action {
+  margin-top: auto;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.doctors-guarantee-strip {
+  margin-top: 3.5rem;
+  background: #f0fdfa;
+  border: 1px solid #ccfbf1;
+  border-radius: var(--radius-md);
+  padding: 1.2rem 1.8rem;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.06);
+}
+
+.guarantee-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.92rem;
+  color: #0f766e;
+  line-height: 1.5;
+}
+
+/* Responsiveness for Tablets & Phones */
+@media (max-width: 980px) {
+  .doctors-team-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .doctor-card-panel {
+    padding: 1.6rem;
+  }
+  .doctor-header-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .doctor-tag-ribbon {
+    justify-content: center;
+  }
+  .doctor-card-name {
+    font-size: 1.3rem;
+  }
+}

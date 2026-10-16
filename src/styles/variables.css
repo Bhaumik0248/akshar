@@ -1,0 +1,57 @@
+:root {
+  /* Hospital & Healthcare Color Tokens (Clean Clinical Light Theme) */
+  --bg-dark: #f8fafc;           /* Primary page background: sterile, calming, clean slate */
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;           /* Clinical card background: pure crisp hospital white */
+  --bg-card-hover: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-surface-soft: #f0fdfa;    /* Soft healing mint tint */
+  --bg-accent-light: #e0f2fe;    /* Soft medical blue tint */
+  --bg-glass: rgba(255, 255, 255, 0.95);
+
+  /* Borders & Dividers */
+  --border-subtle: #e2e8f0;      /* Clean clinical border */
+  --border-focus: #0284c7;       /* Medical blue focus */
+  --border-glow: rgba(13, 148, 136, 0.25);
+  --border-card: #e2e8f0;
+
+  /* Typography Colors (High contrast, easy for elderly/patients to read) */
+  --text-primary: #0f172a;       /* Deep clinical navy - highest readability */
+  --text-secondary: #334155;     /* Professional medical slate */
+  --text-muted: #64748b;         /* Supporting annotations */
+  --text-accent: #0284c7;        /* Medical blue anchor */
+
+  /* Healthcare Accents */
+  --accent-primary: #0284c7;     /* Trust Blue (Physician & Hospital Blue) */
+  --accent-teal: #0d9488;        /* Rehabilitation Teal */
+  --accent-emerald: #059669;     /* Recovery Green */
+  --accent-cyan: #0284c7;        /* Vital Blue */
+  --accent-amber: #d97706;       /* Star rating gold */
+  --accent-rose: #dc2626;        /* Hospital Emergency Red */
+
+  /* Hospital Gradients */
+  --gradient-brand: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+  --gradient-accent: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  --gradient-hero: linear-gradient(180deg, #f0f9ff 0%, #f8fafc 100%);
+  --gradient-card: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+
+  /* Typography Standard */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Reassuring Clinical Elevation & Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 4px 20px rgba(2, 132, 199, 0.06);
+
+  /* Layout Standards */
+  --container-max-width: 1240px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+}

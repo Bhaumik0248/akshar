@@ -1,0 +1,66 @@
+.floating-action-cluster {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-full);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.88rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(12px);
+}
+
+.floating-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.whatsapp-pill {
+  background: #25d366;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-pill:hover {
+  background: #20bd5a;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+}
+
+.call-pill {
+  background: var(--gradient-brand);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+}
+
+.call-pill:hover {
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.6);
+}
+
+.phone-wobble {
+  animation: float 2s infinite ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .floating-action-cluster {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .floating-btn .pill-text {
+    display: none;
+  }
+  .floating-btn {
+    padding: 0.85rem;
+    border-radius: 50%;
+  }
+}
